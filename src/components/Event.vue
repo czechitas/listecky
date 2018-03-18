@@ -1,4 +1,7 @@
 <template>
+<div id="event">
+  <router-view :gun="gun" v-if="gun"></router-view>
+</div>
 </template>
 
 <script>
@@ -9,7 +12,8 @@ export default {
   props: ['eventId'],
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      gun: null,
     }
   },
   created() {
@@ -20,16 +24,13 @@ export default {
       const {eventId} = this
       loginEvent(eventId)
         .then(user => {
-          console.log(user)
-          return this.fetchData(user)
+          this.gun = user
+          console.log('Logged in')
         })
         .catch(err => {
           console.error(err)
         })
       // logged in!
-    },
-    fetchData (user) {
-
     }
   }
 }
