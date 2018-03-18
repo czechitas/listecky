@@ -2,7 +2,7 @@
 </template>
 
 <script>
-const gun = Gun()
+import {loginEvent} from '../gun'
 
 export default {
   name: 'Event',
@@ -13,22 +13,19 @@ export default {
     }
   },
   created() {
-    console.log(gun)
     this.login()
   },
   methods: {
     login () {
-      const user = gun.user()
       const {eventId} = this
-      /*user.create(`listecky-${eventId}`, eventId, function(ack, err){
-        console.log(ack, err)
-      })*/
-      user.auth(`listecky-${eventId}`, eventId, (ack) => {
-        console.log(ack) // TODO: show login form if not exists ({err: Auth attempt failed! Reason: No user!})
-        if (!ack.err) {
-          this.fetchData(user)
-        }
-      })
+      loginEvent(eventId)
+        .then(user => {
+          console.log(user)
+          return this.fetchData(user)
+        })
+        .catch(err => {
+          console.error(err)
+        })
       // logged in!
     },
     fetchData (user) {
