@@ -22,5 +22,5 @@ new Vue({
   i18n,
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
 })

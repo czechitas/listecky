@@ -1,0 +1,200 @@
+{
+  "size": {
+    "columns": 3,
+    "rows": 4
+  },
+  "desks": {
+    "1": {
+      "name": "4 místa s rotací",
+      "layout": {
+        "position": {
+          "column": 1,
+          "row": 1
+        },
+        "rotation": 10,
+        "chairs": {
+          "1": {
+            "student": {
+              "name": "Jan Novák"
+            }
+          },
+          "2": {
+            "student": {}
+          },
+          "3": {
+            "student": {}
+          },
+          "4": {
+            "student": {}
+          }
+        },
+        "shape": "rectangle_long"
+      }
+    },
+    "2": {
+      "name": "2-chair circle rotated and shifted",
+      "layout": {
+        "position": {
+          "column": 2,
+          "row": 2,
+          "column_shift": "-50%",
+          "row_shift": "-50%"
+        },
+        "rotation": -5,
+        "chairs": {
+          "1": {
+            "student": {}
+          },
+          "2": {
+            "student": {}
+          }
+        },
+        "shape": "circle"
+      }
+    },
+    "3": {
+      "name": "2 místa",
+      "layout": {
+        "position": {
+          "column": 3,
+          "row": 3
+        },
+        "rotation": 0,
+        "chairs": {
+          "1": {
+            "student": {}
+          },
+          "2": {
+            "student": {}
+          }
+        },
+        "shape": "rectangle_long"
+      }
+    },
+    "4": {
+      "name": "4 místa",
+      "layout": {
+        "position": {
+          "column": 3,
+          "row": 1
+        },
+        "rotation": 0,
+        "chairs": {
+          "1": {
+            "student": {}
+          },
+          "2": {
+            "student": {}
+          },
+          "3": {
+            "student": {}
+          },
+          "4": {
+            "student": {}
+          }
+        },
+        "shape": "rectangle_long"
+      }
+    },
+    "5": {
+      "name": "4 místa",
+      "layout": {
+        "position": {
+          "column": 1,
+          "row": 3
+        },
+        "rotation": 0,
+        "chairs": {
+          "1": {
+            "student": {}
+          },
+          "2": {
+            "student": {}
+          },
+          "3": {
+            "student": {}
+          },
+          "4": {
+            "student": {}
+          }
+        },
+        "shape": "rectangle_long"
+      }
+    },
+    "6": {
+      "name": "4 místa",
+      "layout": {
+        "position": {
+          "column": 2,
+          "row": 3
+        },
+        "rotation": 0,
+        "chairs": {
+          "1": {
+            "student": {}
+          },
+          "2": {
+            "student": {}
+          },
+          "3": {
+            "student": {}
+          },
+          "4": {
+            "student": {}
+          }
+        },
+        "shape": "rectangle_long"
+      }
+    },
+    "7": {
+      "name": "4 místa",
+      "layout": {
+        "position": {
+          "column": 1,
+          "row": 4
+        },
+        "rotation": 0,
+        "chairs": {
+          "1": {
+            "student": {}
+          },
+          "2": {
+            "student": {}
+          },
+          "3": {
+            "student": {}
+          },
+          "4": {
+            "student": {}
+          }
+        },
+        "shape": "rectangle_long"
+      }
+    },
+    "8": {
+      "name": "4 místa",
+      "layout": {
+        "position": {
+          "column": 2,
+          "row": 4
+        },
+        "rotation": 0,
+        "chairs": {
+          "1": {
+            "student": {}
+          },
+          "2": {
+            "student": {}
+          },
+          "3": {
+            "student": {}
+          },
+          "4": {
+            "student": {}
+          }
+        },
+        "shape": "rectangle_long"
+      }
+    }
+  }
+}
