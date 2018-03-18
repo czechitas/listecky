@@ -1,8 +1,14 @@
 {
   "name": "listecky",
-  "version": "1.0.0",
+  "license": "MIT",
+  "version": "0.0.1",
   "description": "Web app for hands-on workshops helping teacher to see students status.",
-  "author": "Honza Pobořil <honza@poboril.cz>",
+  "contributors": [
+    "Petr Krebs",
+    "Honza Pobořil <honza@poboril.cz>",
+    "Dan Srb <srb.dan@gmail.com>",
+    "Jan Vlnas (https://jan.vlnas.cz)"
+  ],
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
