@@ -17,7 +17,6 @@
         "shape": "rectangle_long"
       }
     },
-
     "3": {
       "name": "2 místa",
       "coach": "",
@@ -31,7 +30,6 @@
         "shape": "rectangle_long"
       }
     },
-
     "4": {
       "name": "4 místa",
       "coach": "",
@@ -98,16 +96,18 @@
       }
     },
     "9": {
-      "name": "4 místa",
-      "coach": "",
+      "name": "2-chair circle",
+      "coach": "rotated and shifted",
       "layout": {
         "position": {
-          "x": 2,
-          "y": 2
+          "x": 4,
+          "y": 4,
+          "x_shift": -0.3,
+          "y_shift": -0.3
         },
-        "rotation": 0,
-        "chairs": 4,
-        "shape": "rectangle_long"
+        "rotation": 45,
+        "chairs": 2,
+        "shape": "circle"
       }
     }
   }
