@@ -1,4 +1,6 @@
 <template>
+<div>
+<h2>Event Config {{ eventId }}</h2>
 <form v-on:submit.prevent="onSubmit">
   <b-field label="Event Identifier">
     <b-input v-model="eventId" />
@@ -9,30 +11,26 @@
     </button>
   </p>
 </form>
-
+</div>
 </template>
 
 <script>
 import {createEvent} from '../gun'
 
 export default {
-  name: 'EventCreate',
+  name: 'EventConfig',
+  props: ['eventId', 'gun'],
   data () {
     return {
-      eventId: '',
     }
+  },
+  mounted () {
+    console.log(this.gun)
   },
   methods: {
     onSubmit () {
+      console.log(this.gun)
       const {eventId} = this
-
-      createEvent(eventId)
-        .then(() => {
-          this.$router.push({name: 'eventConfig', params: {eventId}})
-        })
-        .catch((err) => {
-          console.log(err)
-        })
     }
   }
 }

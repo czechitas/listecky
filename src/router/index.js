@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Event from '@/components/Event'
 import EventCreate from '@/components/EventCreate'
+import EventConfig from '@/components/EventConfig'
 
 Vue.use(Router)
 
@@ -17,6 +18,14 @@ export default new Router({
       name: 'event',
       component: Event,
       props: true,
+      children: [
+        {
+          name: 'eventConfig',
+          path: 'config',
+          component: EventConfig,
+          props: true,
+        },
+      ],
     },
   ],
 })
