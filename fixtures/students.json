@@ -1,0 +1,14 @@
+{
+  "sid1": {
+    "name": "Anna",
+    "state": "working",
+    "stateUpdated": 1521388183,
+    "lastSeen": 1521388183
+  },
+  "sid2": {
+    "name": "Eva",
+    "state": "working",
+    "stateUpdated": 1521388184,
+    "lastSeen": 1521388185
+  }
+}
