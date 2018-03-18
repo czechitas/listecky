@@ -26,6 +26,9 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'comma-dangle': ['warn', 'always-multiline'],
-    
+
+  },
+  globals: {
+    Gun: true, // FIXME: Load Gun locally
   }
 }
