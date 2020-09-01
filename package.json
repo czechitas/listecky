@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@kazupon/vue-i18n-loader": "^0.3.0",
-    "buefy": "^0.6.3",
+    "buefy": "^0.7.2",
     "gun": "^0.2019.416",
     "vue": "^2.5.2",
     "vue-i18n": "^7.6.0",
